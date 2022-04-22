@@ -38,8 +38,9 @@ def test_error_pattern(sample_error_lines):
     line = sample_error_lines[1]
     error = parser.parse_error_line(line)
     assert error is not None
-    assert error.path.endswith("DASwift/RotateImage.swift")
-    assert error.line == "4"
-    assert error.column == "43"
-    assert error.kind == "error"
-    assert error.message == "expected ',' separator"
+    assert error.file.endswith("DASwift/RotateImage.swift")
+    assert error.line == "5"
+    assert error.column == "13"
+    assert error.kind == "warning"
+    assert error.message.startswith("variable")
+    assert error.message.endswith("constant")
