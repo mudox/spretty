@@ -1,12 +1,22 @@
 import fileinput
 from typing import List
 
-from rich.console import Console
+from rich.console import Console, Group, RenderableType
 from rich.live import Live
+from rich.panel import Panel
+from rich.text import Text
 from rich.tree import Tree
 
 from spretty import parser
 from spretty.case import Case
+
+
+def badge(content: str) -> RenderableType:
+    text = Text()
+    text.append(content)
+
+    panel = Panel.fit(text, style="yellow")
+    return panel
 
 
 def main():
@@ -22,6 +32,8 @@ def main():
     console = Console()
     status = console.status("Buiding tests ...", spinner="aesthetic")
     status.start()
+
+    print()
 
     with fileinput.input() as stdin:
         for line in stdin:
@@ -48,9 +60,14 @@ def main():
             else:
                 pass
 
+        print()
+
         with Live() as live:
             for line in stdin:
                 line = str(line).strip()
+
+                if len(_stack) == 0:
+                    break
 
                 _csn = _stack[-1]
 
@@ -88,8 +105,11 @@ def main():
                 else:
                     pass
 
-                if root is not None:
-                    live.update(root)
+                assert root is not None
+                live.update(root)
+
+        print()
+        console.print("[yellow] DONE!")
 
 
 if __name__ == "__main__":
