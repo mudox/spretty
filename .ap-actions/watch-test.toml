@@ -1,0 +1,9 @@
+icon = " "
+
+# required
+title = "Watch & test"
+
+description = "Test script: .ap-actions/script/test.zsh"
+
+[tmux]
+pane_title = "  Test"

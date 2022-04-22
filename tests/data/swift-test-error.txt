@@ -1,0 +1,78 @@
+Building for debugging...
+/Users/mudox/Develop/Swift/da-swift/Sources/DASwift/RotateImage.swift:5:13: warning: variable 'nums' was never mutated; consider changing to 'let' constant
+        var nums = [1, 2, 3]
+        ~~~ ^
+        let
+[6/6] Linking DASwiftPackageTests
+Build complete! (0.49s)
+Test Suite 'All tests' started at 2022-04-23 03:05:22.246
+Test Suite 'DASwiftPackageTests.xctest' started at 2022-04-23 03:05:22.247
+Test Suite 'ContainsDuplicatesSpec' started at 2022-04-23 03:05:22.247
+Test Case '-[DASwiftTests.ContainsDuplicatesSpec sortFirst__pass]' started.
+Test Case '-[DASwiftTests.ContainsDuplicatesSpec sortFirst__pass]' passed (0.001 seconds).
+Test Suite 'ContainsDuplicatesSpec' passed at 2022-04-23 03:05:22.248.
+         Executed 1 test, with 0 failures (0 unexpected) in 0.001 (0.001) seconds
+Test Suite 'IntersectSpec' started at 2022-04-23 03:05:22.248
+Test Case '-[DASwiftTests.IntersectSpec sortDoublePointers__pass]' started.
+Test Case '-[DASwiftTests.IntersectSpec sortDoublePointers__pass]' passed (0.000 seconds).
+Test Suite 'IntersectSpec' passed at 2022-04-23 03:05:22.248.
+         Executed 1 test, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'IsValidSudokuSpec' started at 2022-04-23 03:05:22.248
+Test Case '-[DASwiftTests.IsValidSudokuSpec hashSet__pass]' started.
+Test Case '-[DASwiftTests.IsValidSudokuSpec hashSet__pass]' passed (0.000 seconds).
+Test Case '-[DASwiftTests.IsValidSudokuSpec hashArray__pass]' started.
+Test Case '-[DASwiftTests.IsValidSudokuSpec hashArray__pass]' passed (0.000 seconds).
+Test Case '-[DASwiftTests.IsValidSudokuSpec hashBitmap__pass]' started.
+Test Case '-[DASwiftTests.IsValidSudokuSpec hashBitmap__pass]' passed (0.000 seconds).
+Test Case '-[DASwiftTests.IsValidSudokuSpec brutalForce__pass]' started.
+Test Case '-[DASwiftTests.IsValidSudokuSpec brutalForce__pass]' passed (0.000 seconds).
+Test Suite 'IsValidSudokuSpec' passed at 2022-04-23 03:05:22.249.
+         Executed 4 tests, with 0 failures (0 unexpected) in 0.001 (0.001) seconds
+Test Suite 'MaxProfitSpec' started at 2022-04-23 03:05:22.249
+Test Case '-[DASwiftTests.MaxProfitSpec window__pass]' started.
+Test Case '-[DASwiftTests.MaxProfitSpec window__pass]' passed (0.000 seconds).
+Test Suite 'MaxProfitSpec' passed at 2022-04-23 03:05:22.249.
+         Executed 1 test, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'MoveZerosSpec' started at 2022-04-23 03:05:22.249
+Test Case '-[DASwiftTests.MoveZerosSpec doublePointers__pass]' started.
+Test Case '-[DASwiftTests.MoveZerosSpec doublePointers__pass]' passed (0.000 seconds).
+Test Case '-[DASwiftTests.MoveZerosSpec countZeros__pass]' started.
+Test Case '-[DASwiftTests.MoveZerosSpec countZeros__pass]' passed (0.000 seconds).
+Test Suite 'MoveZerosSpec' passed at 2022-04-23 03:05:22.250.
+         Executed 2 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'PlusOneSpec' started at 2022-04-23 03:05:22.250
+Test Case '-[DASwiftTests.PlusOneSpec s1__pass]' started.
+Test Case '-[DASwiftTests.PlusOneSpec s1__pass]' passed (0.000 seconds).
+Test Suite 'PlusOneSpec' passed at 2022-04-23 03:05:22.250.
+         Executed 1 test, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'RemoveDuplicatesSpec' started at 2022-04-23 03:05:22.250
+Test Case '-[DASwiftTests.RemoveDuplicatesSpec slowFast__pass]' started.
+Test Case '-[DASwiftTests.RemoveDuplicatesSpec slowFast__pass]' passed (0.000 seconds).
+Test Case '-[DASwiftTests.RemoveDuplicatesSpec countUniques__pass]' started.
+Test Case '-[DASwiftTests.RemoveDuplicatesSpec countUniques__pass]' passed (0.000 seconds).
+Test Case '-[DASwiftTests.RemoveDuplicatesSpec countDuplicates__pass]' started.
+Test Case '-[DASwiftTests.RemoveDuplicatesSpec countDuplicates__pass]' passed (0.000 seconds).
+Test Case '-[DASwiftTests.RemoveDuplicatesSpec deleteFromEnd__pass]' started.
+Test Case '-[DASwiftTests.RemoveDuplicatesSpec deleteFromEnd__pass]' passed (0.000 seconds).
+Test Case '-[DASwiftTests.RemoveDuplicatesSpec useSet__pass]' started.
+Test Case '-[DASwiftTests.RemoveDuplicatesSpec useSet__pass]' passed (0.000 seconds).
+Test Suite 'RemoveDuplicatesSpec' passed at 2022-04-23 03:05:22.251.
+         Executed 5 tests, with 0 failures (0 unexpected) in 0.001 (0.001) seconds
+Test Suite 'RotateArraySpec' started at 2022-04-23 03:05:22.251
+Test Case '-[DASwiftTests.RotateArraySpec tripleInversions__pass]' started.
+Test Case '-[DASwiftTests.RotateArraySpec tripleInversions__pass]' passed (0.000 seconds).
+Test Case '-[DASwiftTests.RotateArraySpec ringSet__pass]' started.
+Test Case '-[DASwiftTests.RotateArraySpec ringSet__pass]' passed (0.000 seconds).
+Test Case '-[DASwiftTests.RotateArraySpec ringSteps__pass]' started.
+Test Case '-[DASwiftTests.RotateArraySpec ringSteps__pass]' passed (0.000 seconds).
+Test Case '-[DASwiftTests.RotateArraySpec ringDistance__pass]' started.
+Test Case '-[DASwiftTests.RotateArraySpec ringDistance__pass]' passed (0.000 seconds).
+Test Case '-[DASwiftTests.RotateArraySpec tempArray__pass]' started.
+Test Case '-[DASwiftTests.RotateArraySpec tempArray__pass]' passed (0.000 seconds).
+Test Suite 'RotateArraySpec' passed at 2022-04-23 03:05:22.252.
+         Executed 5 tests, with 0 failures (0 unexpected) in 0.001 (0.001) seconds
+Test Suite 'RotateImageSpec' started at 2022-04-23 03:05:22.252
+Test Case '-[DASwiftTests.RotateImageSpec fake_test__pass]' started.
+Swift/ContiguousArrayBuffer.swift:575: Fatal error: Index out of range
+error: Exited with signal code 5
+

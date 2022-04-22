@@ -1,0 +1,9 @@
+icon = " "
+
+# required
+title = "Watch & poetry run"
+
+# description = ""
+
+[tmux]
+pane_title = "  Run"
