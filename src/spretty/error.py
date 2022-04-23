@@ -1,8 +1,16 @@
+import textwrap
 from os.path import exists
 
 from rich.console import Group
 from rich.panel import Panel
 from rich.syntax import Syntax
+from rich.text import Text
+
+CODE_WIDTH = 90
+
+
+def wrap(text, width=CODE_WIDTH):
+    return "\n".join(textwrap.wrap(text, width, subsequent_indent="\x20" * 9))
 
 
 class Error:
@@ -14,11 +22,16 @@ class Error:
         self.message: str = message
 
     def panel(self) -> Panel:
+        kind = Text(wrap(f"Kind:    {self.kind}"))
+        path = Text(wrap(f"Path:    {self.file}"))
+        line = Text(wrap(f"Line:    {self.line}"))
+        message = Text(wrap(f"Message: {self.message}"))
+
         items = [
-            f"Kind:    {self.kind}",
-            f"Path:    {self.file}",
-            f"Line:    {self.line}",
-            f"Message: {self.message}",
+            kind,
+            path,
+            line,
+            message,
         ]
 
         if exists(self.file):
@@ -36,11 +49,12 @@ class Error:
                     line_numbers=True,
                     line_range=(start, end),
                     highlight_lines={line},
-                    code_width=90,
+                    code_width=CODE_WIDTH,
                     # background_color="default",
                 )
 
-                items += ["\n", codes]
+                sep = Text("𐫴" * (CODE_WIDTH + 4), style="#333333")
+                items += [sep, codes]
 
         group = Group(*items, fit=True)
 

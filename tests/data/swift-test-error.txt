@@ -35,7 +35,11 @@ Test Suite 'MaxProfitSpec' passed at 2022-04-23 03:05:22.249.
          Executed 1 test, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
 Test Suite 'MoveZerosSpec' started at 2022-04-23 03:05:22.249
 Test Case '-[DASwiftTests.MoveZerosSpec doublePointers__pass]' started.
-Test Case '-[DASwiftTests.MoveZerosSpec doublePointers__pass]' passed (0.000 seconds).
+/Users/mudox/Develop/Swift/da-swift/Sources/DASwift/RotateImage.swift:5:13: warning: variable 'nums' was never mutated; consider changing to 'let' constant. extend the line to make trigger text wrapping.
+        var nums = [1, 2, 3]
+        ~~~ ^
+        let
+Test Case '-[DASwiftTests.MoveZerosSpec doublePointers__pass]' failed (0.000 seconds).
 Test Case '-[DASwiftTests.MoveZerosSpec countZeros__pass]' started.
 Test Case '-[DASwiftTests.MoveZerosSpec countZeros__pass]' passed (0.000 seconds).
 Test Suite 'MoveZerosSpec' passed at 2022-04-23 03:05:22.250.
