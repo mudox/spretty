@@ -1,7 +1,7 @@
 import fileinput
 from typing import List
 
-from rich.console import Console, Group, RenderableType
+from rich.console import Console, RenderableType
 from rich.live import Live
 from rich.panel import Panel
 from rich.text import Text
@@ -32,8 +32,6 @@ def main():
     console = Console()
     status = console.status("Buiding tests ...", spinner="aesthetic")
     status.start()
-
-    print()
 
     with fileinput.input() as stdin:
         for line in stdin:
